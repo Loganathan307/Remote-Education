@@ -1,0 +1,33 @@
+{
+  "name": "UserDetail",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "UserName": {
+      "type": "string",
+      "required": true
+    },
+    "Password": {
+      "type": "string",
+      "required": true
+    },
+    "Designation": {
+      "type": "number",
+      "required": true
+    },
+    "UserId": {
+      "type": "string",
+      "required": true
+    },
+    "Standard": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

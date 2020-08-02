@@ -1,0 +1,28 @@
+{
+  "name": "Question",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "questionTypeId": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "options": {
+      "type": "hasMany",
+      "model": "option",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
